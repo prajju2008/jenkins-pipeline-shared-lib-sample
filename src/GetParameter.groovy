@@ -19,7 +19,7 @@ class GetParameter {
                 "Where:\n" +
                 "    paraName - the name of the parameter\n"
 
-        if (args.length < 1) {
+        if (test.length < 1) {
             System.out.println(USAGE)
             System.exit(1)
          }
