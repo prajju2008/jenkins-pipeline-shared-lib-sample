@@ -19,13 +19,13 @@ class GetParameter {
                 "Where:\n" +
                 "    paraName - the name of the parameter\n"
 
-        if (test.length < 1) {
+        if (args.length < 1) {
             System.out.println(USAGE)
             System.exit(1)
          }
 
         // Get args
-        String paraName = test
+        String paraName = args[0]
 
         Region region = Region.AP_SOUTH_1;
         SsmClient ssmClient = SsmClient.builder()
