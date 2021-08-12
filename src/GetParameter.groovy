@@ -1,4 +1,3 @@
-@Grab(group='software.amazon.awssdk', module='aws-java-sdk', version='2.17.17')
 @Grab(group='software.amazon.awssdk', module='regions', version='2.17.17')
 @Grab(group='software.amazon.awssdk', module='ssm', version='2.17.17')
 
