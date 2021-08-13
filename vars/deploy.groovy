@@ -1,12 +1,12 @@
 #!/usr/bin/env groovy
 
 def call(body) {
-    echo "Fetching ssm param"
+    echo "Start Deploy"
 
-    String my_key = new GetParameter(script:this).run()
+    new Deployer(script:this).run()
 
-    echo "Fetched"
-    //currentBuild.result = 'SUCCESS' //FAILURE to fail
+    echo "Deployed"
+    currentBuild.result = 'SUCCESS' //FAILURE to fail
 
-    return my_key
+    return this
 }
