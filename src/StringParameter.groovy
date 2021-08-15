@@ -1,15 +1,16 @@
-@Grab(group='software.amazon.awssdk', module='ssm', version='2.17.9')
-
+@Grapes(
+  @Grab(group='software.amazon.awssdk', module='ssm', version='2.17.19')
+)
 import software.amazon.awscdk.ssm.StringParameter
 
 class StringParameter {
     Script script
 
-    def run() {
+    def run() {        
 
-        String secureStringToken = StringParameter.valueForSecureStringParameter(this, "test", 1); 
+        String stringValue = StringParameter.valueFromLookup(this, "test");
         
-        script.echo("securestring is " + secureStringToken)
+        script.echo("securestring is " + stringValue)
         
     }
 }
