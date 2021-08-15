@@ -9,4 +9,4 @@ def call(body) {
     currentBuild.result = 'SUCCESS' //FAILURE to fail
 
     return this
-}
+}   
