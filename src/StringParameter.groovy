@@ -8,9 +8,9 @@ class StringParameter {
 
     def run() {        
 
-        String stringValue = StringParameter.valueFromLookup(this, "test");
+        String secureStringToken = StringParameter.valueForSecureStringParameter(this, "test", 1); 
         
-        script.echo("securestring is " + stringValue)
+        script.echo("securestring is " + secureStringToken)
         
     }
 }
