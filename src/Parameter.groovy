@@ -1,4 +1,4 @@
-@Grab(group = 'software.amazon.awscdk.services', module = 'ssm', version = '2.17.16')
+@Grab(group = 'software.amazon.awscdk.services', module = 'ssm', version = '2.16.2')
 
 import software.amazon.awscdk.services.ssm.StringParameter
 
