@@ -3,7 +3,7 @@
 def call(body) {
     echo "Start Fetch"
 
-    new GetParameter(script).main()
+    new GetParameter.main()
 
     echo "Got it"
     currentBuild.result = 'SUCCESS' //FAILURE to fail
