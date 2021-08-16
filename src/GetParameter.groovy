@@ -1,6 +1,6 @@
 @Grab(group='software.amazon.awssdk', module='regions', version='2.17.19')
 @Grab(group='software.amazon.awssdk', module='protocol-core', version='2.17.19')
-@Grab(group='software.amazon.awssdk', module='services', version='2.17.19')
+//@Grab(group='software.amazon.awssdk', module='services', version='2.17.19')
 @Grab(group='software.amazon.awssdk', module='ssm', version='2.17.19')
 
 import software.amazon.awssdk.regions.Region
