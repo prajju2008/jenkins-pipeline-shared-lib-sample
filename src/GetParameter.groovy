@@ -27,9 +27,7 @@ public class GetParameter {
 
         String paraName = "test"
         Region region = Region.AP_SOUTH_1
-        SsmClient ssmClient = SsmClient.builder()
-                .region(region)
-                .build()
+        SsmClient ssmClient = SsmClient.builder().region(region).build()
 
         getParaValue(ssmClient, paraName)
         ssmClient.close()
