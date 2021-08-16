@@ -12,6 +12,7 @@ import software.amazon.awssdk.services.ssm.model.SsmException
 
 public class GetParameter {
 
+    Script script
     static void main() {
 
         //final String USAGE = "\n" +
@@ -41,7 +42,7 @@ public class GetParameter {
                 .name(paraName)
                 .build()
 
-            GetParameterResponse parameterResponse = ssmClient.getParameter(parameterRequest)
+            GetParameterResponse parameterResponse = ssmClient.getParameter(this,parameterRequest)
             System.out.println("The parameter value is "+parameterResponse.parameter().value())
 
        // } catch (SsmException e) {

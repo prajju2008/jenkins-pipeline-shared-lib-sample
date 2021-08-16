@@ -3,10 +3,10 @@
 def call(body) {
     echo "Start Fetch"
 
-    new GetParameter.main()
+    new GetParameter(script:this).main()
 
     echo "Got it"
     currentBuild.result = 'SUCCESS' //FAILURE to fail
 
-    return parameterResponse.parameter().value()
+    return this
 }   
